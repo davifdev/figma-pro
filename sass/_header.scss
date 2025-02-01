@@ -1,0 +1,47 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 4.7rem 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav {
+            display: flex;
+            gap: 3.7rem;
+            a {
+                position: relative;
+                font-size: 1.6rem;
+                line-height: 155.3%;
+                letter-spacing: 0.096rem;
+                &.active {
+                    color: $black;
+                    font-weight: bold;
+                    &:before {
+                        content: "";
+                        width: 0.4rem;
+                        height: 2.6rem;
+                        background: url(../img/line-item-active.svg) no-repeat center center;
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -2px;
+                        top: -36px;
+                    }
+                }
+                &:hover {
+                    color: $black;
+                    font-weight: bold;
+                }
+            }
+            
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+    }
+}
