@@ -398,3 +398,71 @@
         }
     }
 }
+
+.s-word {
+    position: relative;
+    padding: 11.3rem 0 13.4rem 0;
+    background: url(../img/bg-word.png) no-repeat bottom center;
+    overflow: hidden;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        text-align: center;
+        margin-bottom: 5.4rem;
+        h2 {
+            color: $black-primary;
+            font-size: 43.1rem;
+            font-weight: 400;
+            line-height: 0.7;
+            letter-spacing: 4.7rem;
+            text-transform: uppercase;
+            margin-bottom: 2.9rem;
+        }
+        span {
+            color: $yellow;
+            font-size: 2.5rem;
+            font-weight: 500;
+            line-height: 155.3%;
+            letter-spacing: 0.575rem;
+            text-transform: uppercase;
+        }
+    }
+    p {
+        text-align: center;
+        color: $gray-world;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 155.3%;
+        width: 100%;
+        max-width: 63.2rem;
+        margin-bottom: 6.3rem;
+    }
+    .ilustra {
+        position: absolute;
+        pointer-events: none;
+        z-index: 999;
+        &.gaviao {
+            top: -4.4rem;
+            left: 0;
+        }
+        &.tigre {
+            bottom: 0;
+            left: 0;
+        }
+        &.polvo {
+            top: -4.4rem;
+            right: 0;
+        }
+        &.coruja {
+            right: 0;
+            bottom: 7.1rem;
+        }
+    }
+
+    @media (min-width: 1441px) {
+        background-size: cover;
+    }
+}
