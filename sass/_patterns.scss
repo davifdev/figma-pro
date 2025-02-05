@@ -27,8 +27,15 @@
     img {
         transition: filter .3s ease;
     }
+
+    @media (max-width: 560px) {
+        padding: 1.1rem 3.6rem 1.1rem 3.6rem;
+        span {
+            font-size: 2.2rem;
+        }
+    }
 }
 
-.s-how-to-use, .s-stories, .s-stickers, .s-word {
+.s-stories, .s-stickers, .s-word {
     display: none;
 } 
