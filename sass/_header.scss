@@ -8,41 +8,57 @@ header {
     .container {
         display: flex;
         justify-content: space-between;
+        align-items: center;   
+    }
+    .btn-mobile {
+        display: none;
+    }
+    nav {
+        display: flex;
         align-items: center;
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 3.7rem;
-            a {
-                position: relative;
-                font-size: 1.6rem;
-                line-height: 155.3%;
-                letter-spacing: 0.096rem;
-                &.active {
-                    color: $black;
-                    font-weight: bold;
-                    &:before {
-                        content: "";
-                        width: 0.4rem;
-                        height: 2.6rem;
-                        background: url(../img/line-item-active.svg) no-repeat center center;
-                        position: absolute;
-                        left: 50%;
-                        margin-left: -2px;
-                        top: -36px;
-                    }
-                }
-                &:hover {
-                    color: $black;
-                    font-weight: bold;
+        gap: 3.7rem;
+        a {
+            position: relative;
+            font-size: 1.6rem;
+            line-height: 155.3%;
+            letter-spacing: 0.096rem;
+            &.active {
+                color: $black;
+                font-weight: bold;
+                &:before {
+                    content: "";
+                    width: 0.4rem;
+                    height: 2.6rem;
+                    background: url(../img/line-item-active.svg) no-repeat center center;
+                    position: absolute;
+                    left: 50%;
+                    margin-left: -2px;
+                    top: -36px;
                 }
             }
-            
+            &:hover {
+                color: $black;
+                font-weight: bold;
+            }
         }
-        .right {
-            display: flex;
-            align-items: center;
-            gap: 3rem;
+        
+    }
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    @media (max-width: 680px) {
+        padding: 3rem 0;
+        .btn-mobile {
+            display: block;
+        }
+        .logo {
+            max-width: 15.9rem;
+        }
+        nav {
+            display: none;
         }
     }
 }
