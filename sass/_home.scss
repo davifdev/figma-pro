@@ -543,7 +543,8 @@
         }
         .arrow {
             right: 6.2rem;
-            max-width: 27.6rem;
+            max-width: 17.6rem;
+            bottom: -21rem;
         }
     }
    }
@@ -646,6 +647,49 @@
             }
         }
     }
+
+    @media (max-width: 1200px) {
+        .all {
+            .card-sticker {
+                .content {
+                   .info {
+                        p {
+                            font-size: 1.2rem;
+                        }
+                   } 
+                }
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .all {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 560px) {
+        padding-bottom: 4rem;
+        .all {
+            grid-template-columns: 1fr;
+        }
+        .title {
+            max-width: 36.1rem;
+            margin-bottom: 14.8rem;
+            h2 {
+                font-size: 11rem;
+                letter-spacing: 0.96rem;
+                justify-content: center;
+                img {
+                    right: 8.1rem;
+                    max-width: 7.7rem;
+                }
+            }
+            .subtitle {
+                top: -3.1rem;
+                left: .9rem;
+            }
+        }
+  
+    }
 }
 
 .s-word {
@@ -713,5 +757,111 @@
 
     @media (min-width: 1441px) {
         background-size: cover;
+    }
+    @media (max-width: 1500px) {
+        .title {
+            h2 {
+                font-size: 34rem;
+                font-weight: 400;
+                line-height: .7;
+                letter-spacing: .5rem;
+            }
+        }
+    }
+    @media (max-width: 1200px) {
+        p {
+            max-width: 51rem;
+        }
+        .title {
+            h2 {
+                font-size: 30rem;
+                font-weight: 400;
+                line-height: .7;
+                letter-spacing: 1rem;
+            }
+        }
+        .ilustra {
+            &.gaviao {
+               max-width: 20rem;
+            }
+            &.tigre {
+                max-width: 23rem;
+            }
+            &.polvo {
+                max-width: 20rem;
+            }
+            &.coruja {
+                max-width: 23rem;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .title {
+            h2 {
+                font-size: 23.1rem;
+                letter-spacing: 9.41px;
+            }
+        }
+        p {
+            max-width: 40rem;
+        }
+        .ilustra {
+            &.gaviao {
+                max-width: 15rem;
+            }
+            &.tigre {
+                max-width: 21rem;
+            }
+            &.polvo {
+                max-width: 15rem;
+            }
+            &.coruja {
+                max-width: 19rem;
+            }
+        }
+    }
+    @media(max-width: 560px) {
+        padding: 4rem 0 49rem 0;
+        .ilustra {
+            &.gaviao {
+                max-width: 16.4rem;
+                top: initial;
+                left: -2.5rem;
+                bottom: 13.5rem;
+            }
+            &.tigre {
+                max-width: 17.5rem;
+                bottom: 0;
+                left: 0;
+            }
+            &.polvo {
+                max-width: 14.9rem;
+                top: initial;
+                bottom: 12.1rem;
+                right: 0;
+            }
+            &.coruja {
+                max-width: 16.8rem;
+                bottom: -0.3rem;
+                right: 0;
+            }
+        }
+        .title {
+            margin-bottom: 2.7rem;
+            h2 {
+                font-size: 14rem;
+                letter-spacing: 0.541rem;
+                margin-bottom: 1rem;
+                span {
+                    font-size: 2rem;
+                    letter-spacing: 0.46rem;
+                }
+            }
+        }
+        p {
+            font-size: 1.3rem;
+            max-width: 100%;
+            margin-bottom: 2.7rem;
+        }
     }
 }
