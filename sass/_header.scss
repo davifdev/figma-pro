@@ -1,10 +1,16 @@
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 1000;
     padding: 4.7rem 0;
+    transition: all .3s ease;
+    &.fixed {
+        background: #ffffff;
+        padding: 2rem 0;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    }
     .container {
         display: flex;
         justify-content: space-between;
@@ -22,6 +28,7 @@ header {
             font-size: 1.6rem;
             line-height: 155.3%;
             letter-spacing: 0.096rem;
+            transition: all .3s ease;
             &.active {
                 color: $black;
                 font-weight: bold;
@@ -47,6 +54,12 @@ header {
         display: flex;
         align-items: center;
         gap: 3rem;
+        transition: opacity .3s ease;
+        button {
+            &:hover {
+                opacity: 0.7;
+            }
+        }
     }
 
     @media (max-width: 680px) {
